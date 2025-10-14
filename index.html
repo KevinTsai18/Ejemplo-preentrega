@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Tech</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--Para iconos, podemos ingresar a Flaticon-->
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <img src="./assets/img/etiqueta-de-precio.png" alt="Logo de mi tienda">
+            <h1>Mi tienda E-Commerce</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#producto">Producto</a>
+            </li>
+            <li>
+                <a href="#contacto">Contactos</a>
+            </li>
+            <li>
+                <a href="./pages/carrito.html">Carrito</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Bienvenido a mi tienda online</h2>
+    </main>
+    <section id="producto">
+        <h3>Productos</h3>
+        <div class="productos">
+            <div class="card">
+                <a href="./pages/descripcion.html">
+                    <h4>Nombre de Producto 1</h4>
+                    <img src="https://picsum.photos/200/300?random=1" alt="imagen del producto 1">
+                    <p>Descripcion breve del producto</p>
+                    <p>Precio: <span>$123.45</span></p>
+                    <button>Comprar</button>
+                </a>
+            </div>
+            <div class="card">
+                <a href="./pages/descripcion.html">
+                    <h4>Nombre de Producto 2</h4>
+                    <img src="https://picsum.photos/200/300?random=2" alt="imagen del producto 2">
+                    <p>Descripcion breve del producto</p>
+                    <p>Precio: <span>$234.56</span></p>
+                    <button>Comprar</button>
+                </a>
+            </div>
+            <div class="card">
+                <a href="./pages/descripcion.html">
+                    <h4>Nombre de Producto 3</h4>
+                    <img src="https://picsum.photos/200/300?random=3" alt="imagen del producto 3">
+                    <p>Descripcion breve del producto</p>
+                    <p>Precio: <span>$345.67</span></p>
+                    <button>Comprar</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="resenia">
+        <!--Puede ser solo texto o con imagenes, reseniando los productos o la pagina-->
+    </section>
+    <section id="contacto">
+        <form action="https://formbricks.com" method="POST">
+            <!--Usamos POST para encriptar los datos ingresados en el formulario-->
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" class="name-class" required placeholder="Ingrese su nombre">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" rows="10" cols="20"></textarea>
+            <input type="submit" value="Enviar Mensaje">
+            <!--Tambien puede ir button: <button type="submit">Enviar Mensaje</button>-->
+        </form>
+    </section>
+    <footer>
+        <div class="contact">
+            <a href=""><!--Icono de whatsapp--></a>
+        </div>
+        ©Todos los derechos reservados
+        <br>
+        Proyecto Pre-Entrega - Talento Tech
+    </footer>
+</body>
+
+</html>
