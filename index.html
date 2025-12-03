@@ -29,7 +29,13 @@
                 <a href="#contacto">Contactos</a>
             </li>
             <li>
-                <a href="./pages/carrito.html">Carrito</a>
+                <a onclick="handleCart()" href="./pages/carrito.html"> <svg xmlns="http://www.w3.org/2000/svg"
+                        width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1M18 6H4.27l2.55 6H15c.33 0 .62-.16.8-.4l3-4c.13-.17.2-.38.2-.6a1 1 0 0 0-1-1m-3 7H6.87l-.77 1.56L6 15a1 1 0 0 0 1 1h11v1H7a2 2 0 0 1-2-2a2 2 0 0 1 .25-.97l.72-1.47L2.34 4H1V3h2l.85 2H18a2 2 0 0 1 2 2c0 .5-.17.92-.45 1.26l-2.91 3.89c-.36.51-.96.85-1.64.85" />
+                    </svg></a>
+
+                <div class="count">0</div>
             </li>
         </ul>
     </nav>
@@ -38,7 +44,8 @@
     </main>
     <section id="producto" class="container-product">
         <h3>Productos</h3>
-        <div class="product">
+        <div class="product" id="product-list">
+            <!--
             <div class="card">
                 <a href="./pages/descripcion.html">
                     <h4>Nombre de Producto 1</h4>
@@ -71,7 +78,7 @@
                     <h4>Nombre de Producto 4</h4>
                     <img src="https://picsum.photos/300/200?random=4" alt="imagen del producto 4">
                     <p>Descripcion breve del producto</p>
-                    <p>Precio: <span>$345.67</span></p>
+                    <p>Precio: <span>$456.78</span></p>
                 </a>
                 <button>Comprar</button>
             </div>
@@ -80,7 +87,7 @@
                     <h4>Nombre de Producto 5</h4>
                     <img src="https://picsum.photos/300/200?random=5" alt="imagen del producto 5">
                     <p>Descripcion breve del producto</p>
-                    <p>Precio: <span>$345.67</span></p>
+                    <p>Precio: <span>$567.89</span></p>
                 </a>
                 <button>Comprar</button>
             </div>
@@ -89,15 +96,16 @@
                     <h4>Nombre de Producto 6</h4>
                     <img src="https://picsum.photos/300/200?random=6" alt="imagen del producto 6">
                     <p>Descripcion breve del producto</p>
-                    <p>Precio: <span>$345.67</span></p>
+                    <p>Precio: <span>$678.91</span></p>
                 </a>
                 <button>Comprar</button>
             </div>
-        </div>
+        </div>-->
     </section>
     <section id="resenia">
         <!--Puede ser solo texto o con imagenes, reseniando los productos o la pagina-->
     </section>
+    <!--Agregar validación del formulario, o directamente usar Bootstrap-->
     <section id="contacto">
         <form action="https://formbricks.com" method="POST">
             <!--Usamos POST para encriptar los datos ingresados en el formulario-->
@@ -117,6 +125,7 @@
         <br>
         Proyecto Pre-Entrega - Talento Tech
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
